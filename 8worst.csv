@@ -1,0 +1,9 @@
+time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,type,horizontalError,depthError,magError,magNst,status,locationSource,magSource
+1965-02-04T05:01:22.000Z,51.251,178.715,30.3,8.7,mw,,,,,official,official19650204050122_30,2019-06-21T21:51:48.327Z,"Rat Islands, Aleutian Islands, Alaska",earthquake,,,,,automatic,iscgem,official
+1906-01-31T15:36:10.000Z,0.955,-79.369,20,8.8,mw,,,,,official,official19060131153610_30,2019-06-21T21:48:05.805Z,"1906 Ecuador-Colombia Earthquake",earthquake,,,,,reviewed,iscgem,official
+2010-02-27T06:34:11.530Z,-36.122,-72.898,22.9,8.8,mww,454,17.8,,1.09,official,official20100227063411530_30,2019-06-21T21:38:09.703Z,"offshore Bio-Bio, Chile",earthquake,,9.2,,,reviewed,us,official
+1952-11-04T16:58:30.000Z,52.623,159.779,21.6,9,mw,,,,,official,official19521104165830_30,2019-06-21T21:19:28.926Z,"off the east coast of the Kamchatka Peninsula, Russia",earthquake,,,,,automatic,iscgem,official
+2011-03-11T05:46:24.120Z,38.297,142.373,29,9.1,mww,541,9.5,,1.16,official,official20110311054624120_30,2019-06-21T21:15:32.501Z,"2011 Great Tohoku Earthquake, Japan",earthquake,,,,,reviewed,us,official
+2004-12-26T00:58:53.450Z,3.295,95.982,30,9.1,mw,601,22,,1.17,official,official20041226005853450_30,2019-06-21T21:13:36.762Z,"2004 Sumatra - Andaman Islands Earthquake",earthquake,,,,,reviewed,us,official
+1964-03-28T03:36:16.000Z,60.908,-147.339,25,9.2,mw,,,,,official,official19640328033616_30,2019-06-21T21:04:46.031Z,"1964 Prince William Sound Earthquake, Alaska",earthquake,,,,,automatic,iscgem,official
+1960-05-22T19:11:20.000Z,-38.143,-73.407,25,9.5,mw,,,,,official,official19600522191120_30,2019-06-21T21:09:56.995Z,"1960 Great Chilean Earthquake (Valdivia Earthquake)",earthquake,,,,,automatic,iscgem,official

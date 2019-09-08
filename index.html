@@ -11,19 +11,11 @@
 
     <link rel="stylesheet" type="text/css" href="style/style.css">
 
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+13px|Slabo+27px&display=swap" rel="stylesheet">
 
 
 </head>
 <body>
-
-
-    <div id = "header">
-
-        <h2 align = "center">Bhuj 2001 - A Data Story
-        </h2>
-    </div>
 
 <div id='map'></div>
 
@@ -35,8 +27,8 @@
 
     <section id='starter' class = 'active'>
 
-        <h2 style = "color: gray;   ">Before the Aftermath, After the Aftershocks</h2>
-        <h2>We begin in the state of Gujarat, India</h2>
+        <h2>The 8 worst earthquakes in the world.</h2>
+        <p>Scroll down to begin</p>
         <br>
 
     </section>
@@ -47,12 +39,12 @@
         <p>It is located at the western end of India, and is at the boundary of the Indian and Eurasian Tectonic plates.</p>
     </section>
 
-     <section id='zoomOpening'>
+     <section id='number8'>
         <h3>The morning of 24 December 2000<br>Bhuj, Gujarat</h3>
         <p>The birds, crocodiles, and other wildlife at the Banni Grasslands have just been disturbed by an earthquake measuring 4.6 on the Richter scale. To them it would have probably felt like a herd of elephants stampeding nearby, which might have been a normal occurance had elephants been living in the Salt Flats of North-western Gujarat. In any case, it was a mild quake far from human settlements, one that must have gone unnoticed by most people at the time.</p>
     </section>
 
-    <section id='compareOldBhuj'>
+    <section id='number7'>
         <h3>The day before Republic Day
 <br>25 January 2001</h3>
         <p>In the municipality of Bhuj, people must have been preparing to mark the occasion of Republic day, or might have been looking forward to the long weekend. Maybe neither of those things mattered, and it was just another normal day for everyone. Surely nobody was expecting anything out of the ordinary. Least of all an earthquake. Not when the last major earthquake to strike the region took place nearly half a century prior.<br><br>That relatively 'quiet' December quake a few kilometers to the north was perhaps the only indicator of what was to come.
@@ -60,12 +52,12 @@
 </p>
     </section>
 
-    <section id='betweenBhuj'>
+    <section id='number6'>
         <h3>Earthquakes in the Kutch Region<br>1956-2001</h3>
         <p>To not expect an earthquake would have been the safest thing to do, statistically speaking. In the years since the last destructive earthquake (which occured in 1956), there were hardly any major incidents in or around the state of Gujarat. Minor quakes yes, but the Rann of Kutch is near a fault line, and smaller shakes are to be expected. In the same duration, a number of much more powerful quakes struck parts of Pakistan to the north-west. There were hardly any such occurences this side of the border.</p>
     </section>
 
-    <section id='nuclearQuake'>
+    <section id='number5'>
         <h3>Man-made earthquakes<br>The Pokharan Nuclear Tests
 </h3>
         <p>In fact, we even made up for the lack of natural earthquakes by creating our own. The Pokharan Nuclear Tests in the years 1974 and 1998 resulted in the some of the largest recorded seismic activities (M5.0 and M5.2 respectively) in the area for that entire duration.
@@ -73,22 +65,22 @@
 </p>
     </section>
 
-    <section id='backToStart'>
+    <section id='number4'>
         <h3>Republic Day 2001<br>Gujarat, India</h3>
         <p>And so when people living in Bhuj and the surrounding villages, towns and cities gathered in their homes and in public spaces to enjoy the holiday, they really had no reason to expect anything out of the ordinary.<br><br>Least of all one of the worst earthquakes ever to strike India.</p>
     </section>
 
-    <section id='BhujDayOne'>
+    <section id='number3'>
         <h3>Bhuj Day One<br>26 January 2001</h3>
         <p>The first earthquake struck at 8:46 AM IST, and measured 7.7 on the Richter scale. <br> But earthquakes are never just lone visitors. Through the rest of the day, there were 18 aftershock earthquakes, all of which would have been felt by the people in the region. First responders and victims alike would have had to deal with the trauma and the fear of something worse to come each time one of the smaller earthquakes struck.</p>
     </section>
 
-    <section id='BhujMonthOne'>
+    <section id='number2'>
         <h3>The Month After<br>February 2001</h3>
         <p>Some sort of switch flipped in the region after Bhuj. In just the next month, there were nearly 60 measurable earthquakes. Over the whole year, 118 earthquakes took place around the area. All while the rebulding efforts were taking their first steps.</p>
     </section>
 
-    <section id='BhujTimeSince'>
+    <section id='number1'>
         <h3>Bhuj after Bhuj<br>2001 - 2019</h3>
         <p>In the years since, Bhuj has had a constant undercurrent of minor earthquakes. At least a handful every year, with 5 earthquakes above 4 on the Richter scale happening this year itself. </p>
     </section>
@@ -100,7 +92,8 @@
     </section>
 
     <section>
-        <p>Made by Rishi Vanukuru</p>
+        <p>Made by Gyan Lakhwani</p>
+        <p>Based on <a href="https://vanukuru.github.io/githubSandbox/mapschool19/BhujDataStory">a similiar project</a> by Rishi Vanukuru</p>
         <p>September 2019</p>
     </section>
 
@@ -117,9 +110,9 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZ3lhbmwiLCJhIjoiY2swNmNoY29kMDA2ZzNjbWN4MmRvb
 
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/rishivanukuru/ck06xkkby1nrp1cmcadby5s35/draft',
+    style: 'mapbox://styles/gyanl/ck0blmyo93cnr1cpji397gs7z',
     center: [80.136,22.305],
-    zoom: 3.69
+    zoom: 1.5
 });
 
 var layerNames = [
@@ -161,7 +154,7 @@ var chapters = {
     'starter':{
         curve:1,
         center: [80.136,22.305],
-        zoom: 3.68,
+        zoom: 2,
         bearing: 0,
         pitch: 0,
         duration: 3000
@@ -170,14 +163,14 @@ var chapters = {
 
     'opening':{
         curve:1,
-        center: [80.136,22.305],
+        center: [51.251,178.715],
         zoom: 4.01,
         bearing: 0,
         pitch: 0,
         duration: 3000
 
     },
-        'zoomOpening':{
+        'number8':{
 
         center: [70.355,23.694],
         zoom: 7.52,
@@ -186,7 +179,7 @@ var chapters = {
         duration: 3000
 
     },
-        'compareOldBhuj':{
+        'number7':{
 
         center: [70.355,23.694],
         zoom: 7.52,
@@ -195,7 +188,7 @@ var chapters = {
         duration: 3000
 
     },
-        'betweenBhuj':{
+        'number6':{
         center: [71.696,22.546],
         zoom: 6.40,
         bearing: 0,
@@ -203,7 +196,7 @@ var chapters = {
         duration: 3000
 
     },
-        'nuclearQuake':{
+        'number5':{
         curve:0.5,
         center: [71.883,26.962],
         zoom: 9.92,
@@ -212,7 +205,7 @@ var chapters = {
         duration: 5000
 
     },
-        'backToStart':{
+        'number4':{
         curve:0.1,
         center: [70.355,23.694],
         zoom: 7.52,
@@ -221,7 +214,7 @@ var chapters = {
         duration: 3000
 
     },
-        'BhujDayOne':{
+        'number3':{
         curve:1,
         center: [70.355,23.694],
         zoom: 7.52,
@@ -230,7 +223,7 @@ var chapters = {
         duration: 3000
 
     },
-        'BhujMonthOne':{
+        'number2':{
         curve:1,
         center: [70.355,23.694],
         zoom: 7.52,
@@ -239,7 +232,7 @@ var chapters = {
         duration: 3000
 
     },
-        'BhujTimeSince':{
+        'number1':{
         curve:1,
         center: [70.355,23.694],
         zoom: 7.52,
@@ -266,17 +259,17 @@ var chapterLayerData = {
 
     'layers': [
 
-        {'name': 'starter', 'activelayers': ['gujaratdistricts']},
-        {'name': 'opening', 'activelayers': ['bhujdistrict','24december']},
-        {'name': 'zoomOpening', 'activelayers': ['24december','24decembertext']},
-        {'name': 'compareOldBhuj', 'activelayers': ['24december','24decembertext','oldbhuj','oldbhujtext']},
-        {'name': 'betweenBhuj', 'activelayers': ['prebhujallmain','prebhujallmaintext']},
-        {'name': 'nuclearQuake', 'activelayers': ['prebhujallmain','prebhujallmaintext']},
-        {'name': 'backToStart', 'activelayers': ['24december','24decembertext','oldbhuj','oldbhujtext']},
-        {'name': 'BhujDayOne', 'activelayers': ['bhujdayone','bhujdayonetext']},
-        {'name': 'BhujMonthOne', 'activelayers': ['bhujmonthone','bhujmonthonetext']},
-        {'name': 'BhujTimeSince', 'activelayers': ['bhujtimesince','bhujtimesincetext']},
-        {'name': 'Ending', 'activelayers': ['bhujmain']}
+        {'name': 'starter', 'activelayers': ['quakes', 'quakes-text']},
+        {'name': 'opening', 'activelayers': ['quakes', 'quakes-text']},
+        {'name': 'number8', 'activelayers': ['quakes', 'quakes-text']},
+        {'name': 'number7', 'activelayers': ['quakes', 'quakes-text']},
+        {'name': 'number6', 'activelayers': ['quakes', 'quakes-text']},
+        {'name': 'number5', 'activelayers': ['quakes', 'quakes-text']},
+        {'name': 'number4', 'activelayers': ['quakes', 'quakes-text']},
+        {'name': 'number3', 'activelayers': ['quakes', 'quakes-text']},
+        {'name': 'number2', 'activelayers': ['quakes', 'quakes-text']},
+        {'name': 'number1', 'activelayers': ['quakes', 'quakes-text']},
+        {'name': 'Ending', 'activelayers': ['quakes', 'quakes-text']}
     ]
 
 };

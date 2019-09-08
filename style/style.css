@@ -1,5 +1,7 @@
 *{
-font-family: 'Alegreya', serif;
+  font-family: 'Slabo 13px', serif;
+  font-size: 13px;
+  color: #2C4557;
 }
 
 body { margin:0; padding:0; }
@@ -9,58 +11,66 @@ body { margin:0; padding:0; }
 
 
 #map {
-    
     position: fixed;
-    width:60%;
 }
 
 #features {
     width: 40%;
-    margin-left: 60%;
+    padding-left: 60%;
     font-family: sans-serif;
     /*overflow-y: scroll;*/
-    background-color: #f6f6f4;
+    /*background-color: #f6f6f4;*/
     /*margin-top:100px;*/
     position: absolute;
-    
+
 }
 
 #filler {
     height: 40vh;
 }
-    
-#header{
-    
+
+#footer{
+
     position: fixed;
     height : 70px;
-    background: linear-gradient(to bottom, rgba(246,246,244,1) 0%,rgba(246,246,244,1) 72%,rgba(246,246,244,0) 100%);
+    background: linear-gradient(to top, rgba(246,246,244,1) 0%,rgba(246,246,244,1) 72%,rgba(246,246,244,0) 100%);
     overflow: hidden;
     z-index: 100;
     display: block;
     right: 0;
     left:0;
+    bottom: 0;
 }
 
 
 
-#header h2{
-    color: #6b0000;
+h2{
+    color: #215C7D;
+    font-family: 'Slabo 27px', serif;
+    font-size: 27px;
+    line-height: 32px;
 }
 
 section {
-    padding:  20px 50px 20px 20%;
+  text-align: center;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
     line-height: 20px;
-    opacity: 0.25;
+    opacity: 0;
     font-size: 13px;
     width: 60%;
-    
+    min-height: 25%;
+    transition: .2s;
 }
 
 section h3{
-        color: #6b0000;
-
+        color: #215C7D;
+        font-family: 'Slabo 27px', serif;
+        font-size: 20px;
+        line-height: 28px;
 }
-        
+
 section.active {
     opacity: 1;
 }
@@ -68,4 +78,3 @@ section:last-child {
     border-bottom: none;
     margin-bottom: 600px;
 }
-
