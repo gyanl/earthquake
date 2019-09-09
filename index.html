@@ -85,20 +85,11 @@
         <p>In the years since, Bhuj has had a constant undercurrent of minor earthquakes. At least a handful every year, with 5 earthquakes above 4 on the Richter scale happening this year itself. </p>
     </section>
 
-
     <section id='Ending'>
-        <h3>Looking Back</h3>
-        <p>This was an attempt at understanding how one major, devastating effect not only altered the lives of all the people in and around Bhuj, but also changed the character of the earth itself.</p>
-    </section>
-
-    <section>
         <p>Made by Gyan Lakhwani</p>
         <p>Based on <a href="https://vanukuru.github.io/githubSandbox/mapschool19/BhujDataStory">a similiar project</a> by Rishi Vanukuru</p>
         <p>September 2019</p>
     </section>
-
-
-
 
     </div>
 
@@ -116,21 +107,8 @@ var map = new mapboxgl.Map({
 });
 
 var layerNames = [
-    'gujaratdistricts',
-    'bhujdistrict',
-    '24december',
-    '24decembertext',
-    'oldbhuj',
-    'oldbhujtext',
-    'prebhujallmain',
-    'prebhujallmaintext',
-    'bhujdayone',
-    'bhujdayonetext',
-    'bhujmonthone',
-    'bhujmonthonetext',
-    'bhujtimesince',
-    'bhujtimesincetext',
-    'bhujmain'
+    'quakes',
+    'quakes-text'
 ];
 
 
@@ -141,8 +119,8 @@ map.on('load', function(){
          map.setLayoutProperty(layerNames[i], 'visibility', 'none');
         }
 
-         map.setLayoutProperty('prebhujall', 'visibility', 'none');
-         map.setLayoutProperty('postbhujall', 'visibility', 'none');
+        // map.setLayoutProperty('prebhujall', 'visibility', 'none');
+        // map.setLayoutProperty('postbhujall', 'visibility', 'none');
 
 
 
@@ -172,7 +150,7 @@ var chapters = {
     },
         'number8':{
 
-        center: [70.355,23.694],
+        center: [178.715,51.251],
         zoom: 7.52,
         bearing: 0,
         pitch: 0,
@@ -181,7 +159,7 @@ var chapters = {
     },
         'number7':{
 
-        center: [70.355,23.694],
+        center: [-79.369, 0.955],
         zoom: 7.52,
         bearing: 0,
         pitch: 0,
@@ -189,7 +167,7 @@ var chapters = {
 
     },
         'number6':{
-        center: [71.696,22.546],
+        center: [-72.898,-36.122],
         zoom: 6.40,
         bearing: 0,
         pitch: 20,
@@ -198,7 +176,7 @@ var chapters = {
     },
         'number5':{
         curve:0.5,
-        center: [71.883,26.962],
+        center: [159.779,52.623],
         zoom: 9.92,
         bearing: 5,
         pitch: 30,
@@ -207,7 +185,7 @@ var chapters = {
     },
         'number4':{
         curve:0.1,
-        center: [70.355,23.694],
+        center: [142.373,38.297],
         zoom: 7.52,
         bearing: 0,
         pitch: 30,
@@ -216,7 +194,7 @@ var chapters = {
     },
         'number3':{
         curve:1,
-        center: [70.355,23.694],
+        center: [95.982,3.295],
         zoom: 7.52,
         bearing: 0,
         pitch: 0,
@@ -225,7 +203,7 @@ var chapters = {
     },
         'number2':{
         curve:1,
-        center: [70.355,23.694],
+        center: [-147.339,60.908],
         zoom: 7.52,
         bearing: 3,
         pitch: 20,
@@ -234,7 +212,7 @@ var chapters = {
     },
         'number1':{
         curve:1,
-        center: [70.355,23.694],
+        center: [-73.407,-38.143],
         zoom: 7.52,
         bearing: 0,
         pitch: 0,
