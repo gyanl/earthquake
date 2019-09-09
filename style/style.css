@@ -7,11 +7,11 @@
 body { margin:0; padding:0; }
 
 
-#map { position:absolute; top:0; bottom:0; width:100%; }
-
-
 #map {
-    position: fixed;
+  position: fixed;;
+  top:0;
+  bottom:0;
+  width:100%;
 }
 
 #features {
@@ -61,7 +61,7 @@ section {
     font-size: 13px;
     width: 60%;
     min-height: 25%;
-    transition: .2s;
+    transition: .4s;
 }
 
 section h3{
@@ -78,3 +78,29 @@ section.active {
 section:last-child {
     margin-bottom: 600px;
 }
+
+@media only screen and (max-width: 768px) {
+
+  #features {
+      width: auto;
+      padding-left: 0;
+      font-family: sans-serif;
+      /*overflow-y: scroll;*/
+      /*background-color: #f6f6f4;*/
+      /*margin-top:100px;*/
+      position: absolute;
+  }
+
+  section {
+    text-align: center;
+      background: #fff;
+      border-radius: 8px;
+      padding: 16px;
+      line-height: 20px;
+      opacity: 0;
+      font-size: 13px;
+      width: 90%;
+      margin: auto;
+      min-height: auto;
+      transition: .4s;
+  }
