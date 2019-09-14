@@ -1,11 +1,33 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
 *{
-  font-family: 'Slabo 13px', serif;
+  font-family: 'Inter var', 'Inter', sans-serif;
   font-size: 13px;
   color: #2C4557;
 }
 
 body { margin:0; padding:0; }
 
+.date{
+font-style: italic;
+padding: 0;
+margin-top: 0;
+margin-bottom: 6px;
+}
+
+.magnitude{
+  padding: 4px 2px 4px 2px;
+  border-radius: 4px;
+  width: 36px;
+  background: #f56e6c;
+  color: #ffffff;
+  margin: auto;
+}
 
 #map {
   position: fixed;;
@@ -45,8 +67,8 @@ body { margin:0; padding:0; }
 
 
 h2{
-    color: #215C7D;
-    font-family: 'Slabo 27px', serif;
+    color: #75353d;
+    font-weight: 700;
     font-size: 27px;
     line-height: 32px;
 }
@@ -65,10 +87,13 @@ section {
 }
 
 section h3{
-        color: #215C7D;
-        font-family: 'Slabo 27px', serif;
+        color: #75353d;
+        font-weight: 700;
+        font-variation-settings: 'wght' 700, 'slnt' 10;
         font-size: 20px;
         line-height: 28px;
+        margin-top: 12px;
+        margin-bottom: 2px;
 }
 
 section.active {
@@ -86,16 +111,13 @@ section:last-child {
     top:auto;
     bottom: 0;
     width:100%;
-    height:120vw;
+    height: 100%;
   }
 
   #features {
       width: auto;
       padding-left: 0;
-      font-family: sans-serif;
-      /*overflow-y: scroll;*/
-      /*background-color: #f6f6f4;*/
-      /*margin-top:100px;*/
+      height: 50%;
       position: absolute;
   }
 
